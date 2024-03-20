@@ -9,9 +9,27 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        caption {
+            font-size: 1.5em;
+            padding: 10px;
+            font-weight: bold;
+            background-color: lightgray;
+        }
+
         table {
-            width: 500px;
+            width: 350px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        thead {
+            position: sticky;
+            background-color: black;
+            top: -0.5%;
         }
 
         td, th {
@@ -20,7 +38,7 @@
         }
 
         thead, tfoot {
-            background-color: gray;
+            background-color: rgb(0, 0, 0);
             color: white;
         }
 
@@ -32,9 +50,10 @@
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>População de Unidades Federativas</caption>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 50px";>População</th>
         </thead>
         <tbody>
             <tr>
@@ -57,10 +76,75 @@
                 <td>Paraná</td>
                 <td class="num">11444380</td>
             </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11444380</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11444380</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11444380</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11444380</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11444380</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11444380</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11444380</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11444380</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11444380</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11444380</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11444380</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11444380</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11444380</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11444380</td>
+            </tr>
+            <var><tr>
+                <td>Paraná</td>
+                <td class="num">11444380</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11444380</td>
+            </tr>
+        </var>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>106.590.486</strong></td>
             </tr>
         </tfoot>
