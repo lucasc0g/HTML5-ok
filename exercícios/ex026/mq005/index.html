@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Meu site</h1>
+        <i id="burger" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel omnis reiciendis molestias aut eius! Nemo vitae veritatis iste impedit consectetur quia modi quisquam doloremque. Quaerat iure est cumque molestias repellendus? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio totam velit voluptatem sequi magni debitis nobis, omnis exercitationem recusandae in facere. Quae neque nihil distinctio perferendis blanditiis, eos consequuntur. Tempore?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci consectetur animi fugiat excepturi quibusdam dicta obcaecati, debitis natus, error cum doloribus, dolor voluptate temporibus similique possimus a ad ullam. Quibusdam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem eos facilis, blanditiis quos tempora corrupti alias numquam nam in ad consectetur iure magnam accusamus amet ut? Quasi dicta illo autem.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil at fugit alias deserunt nesciunt quis sed. Culpa saepe ad praesentium beatae voluptatum nihil magnam quo deserunt iusto! At, quibusdam voluptatum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid velit eligendi consectetur laboriosam? Beatae impedit reiciendis labore laudantium nisi eligendi ex cupiditate sed, fugit optio minus aliquid eaque quisquam tempore?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea neque facere dolores dolorum non quod sint, beatae at velit esse porro accusamus blanditiis dolor harum ex provident fugiat sit nostrum?</p>
+        </article>
+    </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+    </script>
+</body>
+</html>
